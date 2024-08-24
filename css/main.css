@@ -1093,7 +1093,7 @@ h3.succes_message {
   margin: 0 -10px 30px 0;
 }
 .hover_listing li {
-  border-right: 2px solid #fafafb;
+  border: 1px solid #d1d1d1;
 }
 .hover_listing li .img {
   display: block;
@@ -1102,9 +1102,20 @@ h3.succes_message {
   margin-bottom: 25px;
   position: relative;
 }
+.content {
+  padding: 0 10px;
+}
 .hover_listing li h3 {
   line-height: normal;
   margin-bottom: 10px;
+}
+.price-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-block p {
+  font-size: 16px;
 }
 .hover_listing li h3 a {
   color: inherit;
@@ -1255,6 +1266,14 @@ ul.hover-social-icons li a {
 ul.hover-social-icons li a:hover {
   color: #fff;
   background-color: #000;
+}
+.name-block {
+  padding: 0 10px;
+}
+
+.name-block > h3,
+.name-block > p {
+  text-align: center;
 }
 
 /*----------------------------------------------------
