@@ -1525,6 +1525,10 @@ ul.pricing-boxes li.best-plan .plan-features ul {
   opacity: 1;
   position: relative;
 }
+.imageBox img {
+  /* object-fit: contain; */
+  object-position: top;
+}
 .imageBox.activeImage:hover img,
 .imageBox.activeImage img {
   opacity: 0.2;
