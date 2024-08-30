@@ -1733,6 +1733,18 @@ ul.list li {
   margin: 0 0 5px;
 }
 
+/* ---------------------------------------------- */
+/* Gallery Style */
+/* ----------------------------------------------- */
+.gallery-image-block img {
+  width: 100%;
+}
+.gallery-image-block {
+  margin-bottom: 10px;
+}
+/* .gallery-image-block {
+  border: 2px solid black;
+} */
 /*----------------------------------------------------
 	 13. Footer Style
 ------------------------------------------------------*/
