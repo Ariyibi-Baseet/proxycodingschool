@@ -12,7 +12,9 @@ function ComingSoon() {
             <i className="bi bi-rocket-takeoff text-white "></i>
           </p>
 
-          <h1 className="text-white">Site Under Maintenance</h1>
+          <h1 className="text-white">
+            Site Under Maintenance <i class="bi bi-tools"></i>
+          </h1>
           <p className="text-white coming-soon-text">
             We are almost there! Want to get notified when the site relaunching
             goes live? <br /> Kindly reach us for more updates
