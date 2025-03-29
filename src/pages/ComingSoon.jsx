@@ -13,7 +13,7 @@ function ComingSoon() {
           </p>
 
           <h1 className="text-white">We are coming soon</h1>
-          <p className="text-white fs-5">
+          <p className="text-white coming-soon-text">
             We are almost there! If you want to get notified when the website
             goes live, <br /> Kindly reach us for more updates
           </p>

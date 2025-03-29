@@ -17,7 +17,20 @@
   text-shadow: 2px 4px 10px #000;
   font-size: 40px;
 }
+.coming-soon-text {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 600px) {
+  .coming-soon-text {
+    font-size: 16px;
+  }
+}
+
 .content h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   text-shadow: 2px 4px 3px #000;
 }
 .content p {
