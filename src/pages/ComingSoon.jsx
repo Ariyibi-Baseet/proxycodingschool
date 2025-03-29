@@ -12,10 +12,10 @@ function ComingSoon() {
             <i className="bi bi-rocket-takeoff text-white "></i>
           </p>
 
-          <h1 className="text-white">We are coming soon</h1>
+          <h1 className="text-white">Site Under Maintenance</h1>
           <p className="text-white coming-soon-text">
-            We are almost there! If you want to get notified when the website
-            goes live, <br /> Kindly reach us for more updates
+            We are almost there! Want to get notified when the site relaunching
+            goes live? <br /> Kindly reach us for more updates
           </p>
           <div className="social-icon-wrapper py-1 px-4 rounded-2 shadow-lg bg-white mx-auto d-flex align-items-center justify-content-center gap-3 animate__animated animate__pulse animate__infinite">
             <a href="https://web.facebook.com/ProxyCodingSchool">
