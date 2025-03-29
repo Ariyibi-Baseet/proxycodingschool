@@ -1,0 +1,41 @@
+.page-wrapper {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/gallery.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  text-align: center;
+}
+.bi-rocket-takeoff {
+  text-shadow: 2px 4px 10px #000;
+  font-size: 40px;
+}
+.content h1 {
+  text-shadow: 2px 4px 3px #000;
+}
+.content p {
+  /* text-shadow: 2px 1px 3px #000; */
+}
+
+.social-icon-wrapper {
+  width: max-content;
+}
+.bi-facebook {
+  color: #3b5998;
+}
+.bi-instagram {
+  color: #e1306c;
+}
+.bi-youtube {
+  color: #d71e18;
+}
+.bi-linkedin {
+  color: #0077b5;
+}
