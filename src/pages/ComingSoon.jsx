@@ -1,5 +1,6 @@
 import "../assets/css/ComingSoon.css";
 import "animate.css";
+import { Link } from "react-router-dom";
 // import bg from "../assets/images/gallery.jpg"
 
 function ComingSoon() {
@@ -23,9 +24,9 @@ function ComingSoon() {
             <a href="https://web.facebook.com/ProxyCodingSchool">
               <i className="bi bi-facebook fs-3"></i>
             </a>
-            <a href="">
+            <Link to="/coming-soon">
               <i className="bi bi-instagram fs-3"></i>
-            </a>
+            </Link>
             <a href="">
               <i className="bi bi-youtube fs-3"></i>
             </a>
