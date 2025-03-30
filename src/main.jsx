@@ -7,7 +7,7 @@ import App from "./App.jsx";
 import ComingSoon from "./pages/ComingSoon.jsx";
 
 // CSS FILES
-import "./index.css";
+import "./assets/css/variables.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 // JS FILES

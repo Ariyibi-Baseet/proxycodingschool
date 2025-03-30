@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #fff;
+  height: 70px;
+  box-shadow: 0px 4px 6px -2px #00000026;
+}
+
+.nav-link {
+  font-family: var(--ff-league-spartan);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-16);
+}
+
+.active {
+  border-bottom: 2px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.btn-wrapper button {
+  border: 1px solid transparent;
+  border-radius: var(--br-10);
+  padding: 10px;
+  font-size: var(--fs-16);
+  font-weight: var(--fw-500);
+  font-family: var(--ff-league-spartan);
+  background-color: #fff;
+  width: 160px;
+}
+
+.btn-wrapper .contact-btn {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  margin-right: 12px;
+}
+
+.btn-wrapper .apply-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+}
