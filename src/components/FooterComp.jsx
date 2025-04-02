@@ -10,9 +10,9 @@ function FooterComp() {
       <footer>
         <div className="container">
           <div className="row">
-            <div className="col-10">
+            <div className="col-12 col-md-10">
               <div className="row bottom-liner">
-                <div className="col-4">
+                <div className="col-12 col-md-4">
                   <h1 className="footer-head-text">PROXY Coding School</h1>
                   <p>
                     Welcome to Proxy coding school, a dynamic technology
@@ -20,9 +20,9 @@ function FooterComp() {
                     individuals with cutting-edge technology solutions.
                   </p>
                 </div>
-                <div className="col-3">
+                <div className="col-12 col-md-3">
                   <ul
-                    className="navlinks list-unstyled mx-auto"
+                    className="navlinks list-unstyled me-0 mx-md-auto"
                     style={{ width: "max-content" }}
                   >
                     <h4 className="text-center quick-links-text">
@@ -46,9 +46,9 @@ function FooterComp() {
                     </li>
                   </ul>
                 </div>
-                <div className="col-3">
+                <div className="col-12 col-md-3">
                   <ul
-                    className="navlinks list-unstyled mx-auto"
+                    className="navlinks list-unstyled me-0 mx-md-auto"
                     style={{ width: "max-content" }}
                   >
                     <h4 className="contact-text">Contact</h4>
@@ -75,7 +75,7 @@ function FooterComp() {
               </div>
             </div>
 
-            <div className="col-2">
+            <div className="col-12 col-md-2">
               <h4 className="join-us-text">Join us on</h4>
               <div className="social-links">
                 <a href="#" className="me-2">
