@@ -1,0 +1,50 @@
+footer {
+  background-color: var(--dark-color);
+  padding: 100px 0;
+}
+
+.bottom-liner {
+  border-bottom: 2px solid white;
+  padding-bottom: 80px;
+}
+
+.footer-head-text,
+.quick-links-text,
+.contact-text,
+.join-us-text {
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-600);
+}
+
+.footer-head-text {
+  font-size: var(--fs-24);
+  color: var(--primary-color);
+}
+
+.footer-head-text + p {
+  color: #fcfcfc;
+  font-family: var(--ff-open-sans);
+}
+
+.quick-links-text,
+.contact-text,
+.join-us-text {
+  font-size: var(--fs-20);
+  color: #fcfcfc;
+}
+
+.navlinks,
+.navlinks li *,
+.social-links a i {
+  color: #fcfcfc;
+  font-family: var(--ff-open-sans);
+}
+
+.social-links a i {
+  font-size: 20px;
+}
+
+.copyright-text {
+  font-family: var(--ff-open-sans);
+  font-weight: var(--ff-400);
+}

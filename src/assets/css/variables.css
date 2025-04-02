@@ -2,17 +2,22 @@
   /* color scheme */
   --primary-color: #1e90ff;
   --accent-color: #ffd700;
+  --dark-color: #191a1b;
   --ff-league-spartan: "League Spartan", sans-serif;
   --ff-raleway: "Raleway", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-open-sans: "Open Sans", sans-serif;
   /* font size */
   --fs-16: 16px;
   --fs-64: 64px;
   --fs-48: 48px;
   --fs-20: 20px;
+  --fs-24: 24px;
   --fs-54: 54px;
   --fs-40: 40px;
   --fs-base: 16px;
   --fw-500: 500;
+  --fw-600: 600;
   --fw-700: 700;
   --br-8: 8px;
   --br-5: 5px;

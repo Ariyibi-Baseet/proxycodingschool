@@ -14,7 +14,7 @@ function ComingSoon() {
           </p>
 
           <h1 className="text-white">
-            Site Under Maintenance <i class="bi bi-tools"></i>
+            Site Under Maintenance <i className="bi bi-tools"></i>
           </h1>
           <p className="text-white coming-soon-text">
             We are almost there! Want to get notified when the site relaunching

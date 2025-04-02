@@ -7,7 +7,8 @@ function NavBar() {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand" to="#">
-            Navbar
+            <img src="/logo.png" alt="" className="nav-logo" />
+            <span className="nav-logo-text ms-2">Proxy Coding School</span>
           </a>
           <button
             className="navbar-toggler"
