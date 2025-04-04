@@ -1,13 +1,8 @@
-header {
-  /* border: 2px solid yellow; */
-  /* height: 747px; */
-}
 .carousel-inner {
   height: 747px;
 }
 .carousel-item {
   height: 747px;
-  border: 2px solid green !important;
 }
 
 .carousel-item img {
@@ -25,7 +20,6 @@ header {
     rgba(0, 0, 0, 0.6) 62.67%,
     rgba(0, 0, 0, 0) 97.93%
   );
-  border: 2px solid yellow;
 }
 
 .slider-overlay {
@@ -46,11 +40,24 @@ header {
   background-color: var(--primary-color);
 }
 
+@media screen and (max-width: 768px) {
+  .learn-grow-text .circle {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .learn-grow-text .text {
   font-size: var(--fs-64);
   font-family: var(--ff-raleway);
   font-weight: 700 !important;
   color: #f3f3f3;
+}
+
+@media screen and (max-width: 768px) {
+  .learn-grow-text .text {
+    font-size: 32px;
+  }
 }
 
 .text::after {
@@ -78,10 +85,22 @@ header {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 768px) {
+  .proxy-coding-text p {
+    font-size: 32px;
+  }
+}
+
 .expert-text {
   color: #f2f2f2;
   font-family: var(--ff-raleway);
   font-size: var(--fs-20);
+}
+
+@media screen and (max-width: 768px) {
+  .expert-text {
+    max-width: 400px;
+  }
 }
 
 .apply-btn {

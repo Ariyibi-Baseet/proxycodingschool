@@ -26,7 +26,7 @@ function HeaderComp() {
                     </span>
                     <span className="text">Thrive</span>
                   </div>
-                  <div className="proxy-coding-text">
+                  <div className="proxy-coding-text text-center">
                     <p>with Proxy Coding School</p>
                   </div>
                   <p className="expert-text text-center">
