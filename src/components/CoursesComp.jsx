@@ -10,7 +10,7 @@ function CoursesComp() {
       <section className="courses-section">
         <div className="container">
           <div className="row">
-            <div className="col-5 d-flex align-items-center">
+            <div className="col-12 col-md-12 col-lg-5 mb-3 d-flex align-items-center">
               <div className="explore-section ">
                 <div className="explore-content">
                   <p className="explore-text">Explore our </p>
@@ -28,7 +28,7 @@ function CoursesComp() {
                 </div>
               </div>
             </div>
-            <div className="col-7">
+            <div className="col-12 col-md-12 col-lg-7 mb-3">
               <div className="courses-block">
                 <div className="frontend-block">
                   <div className="overlay d-flex align-items-center justify-content-center flex-column">
@@ -38,7 +38,7 @@ function CoursesComp() {
                 </div>
                 <div className="down-block mt-3">
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col-12 col-md-6 mb-3">
                       <div className="data-analytics-block">
                         <div className="overlay d-flex align-items-center justify-content-center flex-column">
                           <img src={dataAnalyticIcon} alt="" />
@@ -46,7 +46,7 @@ function CoursesComp() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-12 col-md-6 mb-3">
                       <div className="design-block">
                         <div className="overlay d-flex align-items-center justify-content-center flex-column">
                           <img src={designIcon} alt="" />

@@ -2,7 +2,7 @@
   padding: 30px 0 50px 0;
 }
 .testimonial-content-wrapper {
-  width: 755px;
+  max-width: 755px;
   margin: auto;
   position: relative;
   padding-top: 30px;
