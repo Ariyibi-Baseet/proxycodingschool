@@ -1,0 +1,25 @@
+.testimonial-section {
+  padding: 30px 0 50px 0;
+}
+.testimonial-content-wrapper {
+  width: 755px;
+  margin: auto;
+  position: relative;
+  padding-top: 30px;
+}
+
+.testimonial-content-wrapper h1 {
+  font-size: 40px;
+  font-family: var(--ff-raleway);
+  font-weight: 700 !important;
+  text-align: center;
+}
+
+.orange-text {
+  color: var(--accent-color);
+}
+
+.quote-img {
+  position: absolute;
+  top: -38px;
+}

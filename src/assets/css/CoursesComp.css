@@ -1,0 +1,96 @@
+.courses-section {
+  padding: 40px 0 50px 0;
+}
+.explore-content {
+}
+.explore-text {
+  font-size: var(--fs-48);
+  font-weight: 700 !important;
+  color: #262338;
+  font-family: var(--ff-raleway);
+}
+.courses-text {
+  color: var(--accent-color);
+  font-family: var(--ff-raleway);
+  font-size: var(--fs-64);
+  font-weight: 700 !important;
+  margin-top: -17px;
+}
+.courses-text + p {
+  font-family: var(--ff-open-sans);
+  font-size: var(--fs-20);
+  color: #4e4b66;
+}
+.browse-courses-btn {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  font-family: var(--ff-open-sans);
+  color: #fcfcfc;
+  border-radius: 8px;
+  width: 230px;
+}
+
+.courses-block {
+}
+
+.frontend-block {
+  width: 100%;
+  height: 438px;
+  /* background-image: linear-gradient(
+      119.26deg,
+      rgba(0, 0, 0, 0.5) 65.94%,
+      rgba(0, 0, 0, 0) 124.6%
+    ),
+    url("../images/courses1.png"); */
+  background-image: url("../images/courses1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.frontend-block:hover .overlay,
+.data-analytics-block:hover .overlay,
+.design-block:hover .overlay {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay > p {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 700 !important;
+  font-family: var(--ff-raleway);
+}
+
+.data-analytics-block,
+.design-block {
+  height: 290px;
+  width: 100%;
+}
+
+.data-analytics-block {
+  background-image: url("../images/courses2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.design-block {
+  background-image: url("../images/courses3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}

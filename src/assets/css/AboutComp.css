@@ -1,0 +1,23 @@
+.about-section {
+  padding: 40px 0;
+}
+
+.small-text {
+  font-size: var(--fs-16);
+  font-family: var(--ff-raleway);
+  font-weight: 700 !important;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: var(--fs-48);
+  font-family: var(--ff-raleway);
+  font-weight: 700 !important;
+  padding-right: 10px;
+}
+
+p {
+  font-size: var(--fs-20);
+  font-family: var(--ff-raleway);
+  font-weight: 400;
+}
