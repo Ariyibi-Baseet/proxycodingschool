@@ -17,11 +17,11 @@ import "bootstrap/dist/js/bootstrap.js";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <ComingSoon />,
+    element: <App />,
   },
   {
     path: "/coming-soon",
-    element: <App />,
+    element: <ComingSoon />,
   },
 ]);
 
