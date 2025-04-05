@@ -20,7 +20,7 @@
 @media screen and (max-width: 600px) {
   .explore-text,
   .courses-text {
-    font-size: 32px;
+    font-size: 34px;
   }
 }
 .courses-text + p {
@@ -83,7 +83,6 @@
 @media screen and (max-width: 600px) {
   .overlay > p {
     font-size: 23px;
-    border: 2px solid white;
   }
 }
 

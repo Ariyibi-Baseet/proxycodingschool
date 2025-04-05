@@ -15,6 +15,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .testimonial-content-wrapper h1 {
+    font-size: 34px;
+  }
+}
+
 .orange-text {
   color: var(--accent-color);
 }
