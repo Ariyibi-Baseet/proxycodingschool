@@ -29,20 +29,30 @@ function FooterComp() {
                       Quick Links
                     </h4>
                     <li className="mb-2">
-                      <Link className="text-decoration-none">Home</Link>
+                      <Link className="text-decoration-none" to="/">
+                        Home
+                      </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-decoration-none">About Us</Link>
+                      <Link className="text-decoration-none" to="/about">
+                        About Us
+                      </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-decoration-none">Courses</Link>
+                      <Link className="text-decoration-none" to="courses">
+                        Courses
+                      </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-decoration-none">Gallery</Link>
+                      <Link className="text-decoration-none" to="gallery">
+                        Gallery
+                      </Link>
                     </li>
 
                     <li className="mb-2">
-                      <Link className="text-decoration-none">FAQs</Link>
+                      <Link className="text-decoration-none" to="faq">
+                        FAQs
+                      </Link>
                     </li>
                   </ul>
                 </div>

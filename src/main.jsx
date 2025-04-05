@@ -2,9 +2,15 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// PAGES & COMPNENTS
+// PAGES
 import App from "./App.jsx";
+import ApplicationPage from "./pages/ApplicationPage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
 import ComingSoon from "./pages/ComingSoon.jsx";
+import CoursesPage from "./pages/CoursesPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
+import FaqPage from "./pages/FaqPage.jsx";
+import GalleryPage from "./pages/GalleryPage.jsx";
 
 // CSS FILES
 import "./assets/css/variables.css";
@@ -22,6 +28,30 @@ const router = createBrowserRouter([
   {
     path: "/coming-soon",
     element: <ComingSoon />,
+  },
+  {
+    path: "/courses",
+    element: <CoursesPage />,
+  },
+  {
+    path: "/apply",
+    element: <ApplicationPage />,
+  },
+  {
+    path: "/about",
+    element: <AboutPage />,
+  },
+  {
+    path: "/contact",
+    element: <ContactPage />,
+  },
+  {
+    path: "/faq",
+    element: <FaqPage />,
+  },
+  {
+    path: "/gallery",
+    element: <GalleryPage />,
   },
 ]);
 

@@ -87,7 +87,9 @@
 
 @media screen and (max-width: 768px) {
   .proxy-coding-text p {
-    font-size: 32px;
+    font-size: 28px;
+    padding: 10px;
+    white-space: pre;
   }
 }
 

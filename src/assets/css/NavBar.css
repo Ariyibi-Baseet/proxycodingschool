@@ -9,15 +9,17 @@
 }
 
 .nav-logo-text {
-  font-weight: 600 !important;
-  font-weight: var(--ff-raleway) !important;
+  font-weight: 700 !important;
+  font-family: var(--ff-raleway) !important;
   font-size: var(--fs-32);
 }
 
 .nav-link {
   font-family: var(--ff-league-spartan);
-  font-weight: var(--fw-500);
+  font-weight: 600 !important;
   font-size: var(--fs-16);
+  width: max-content;
+  /* border: 2px solid black !important; */
 }
 
 .active {
