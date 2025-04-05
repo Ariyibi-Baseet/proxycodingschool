@@ -101,7 +101,14 @@
 
 @media screen and (max-width: 768px) {
   .expert-text {
-    max-width: 400px;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 503px) {
+  .expert-text {
+    width: 350px;
+    margin: auto;
   }
 }
 
