@@ -1,0 +1,26 @@
+.gallery-section {
+  padding: 40px 0 100px 0;
+}
+
+.gallery-section h1 {
+  color: var(--primary-color);
+  font-size: 50px;
+}
+
+@media screen and (max-width) {
+  .gallery-section p {
+    color: #4e4b66;
+  }
+}
+.block-one p,
+.block-two p {
+  font-family: var(--ff-raleway);
+  color: #262338;
+  font-weight: 600 !important;
+  font-size: 26px;
+}
+
+.pics img {
+  width: 100%;
+  height: 300px;
+}
