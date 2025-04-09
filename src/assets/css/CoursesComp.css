@@ -1,6 +1,13 @@
 .courses-section {
   padding: 40px 0 50px 0;
 }
+
+@media screen and (max-width: 600px) {
+  .courses-section {
+    padding: 40px 20px 50px 20px;
+  }
+}
+
 .explore-content {
 }
 .explore-text {
