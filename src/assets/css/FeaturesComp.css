@@ -3,6 +3,12 @@
   background-color: #f5f3f3;
 }
 
+@media screen and (max-width: 600px) {
+  .features-section {
+    padding: 40px 40px;
+  }
+}
+
 h1 {
   font-family: var(--ff-raleway);
   font-size: var(--fs-48);
