@@ -1,52 +1,59 @@
-.faq-header{
-    position: relative;
-    height: 437px;
+.faq-header {
+  position: relative;
+  height: 437px;
 }
-.faq-img{
-    height: 100%;
-    width: 100%;    
-    object-fit: cover;
-}
-.faq-overlay{
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    background: linear-gradient(94.43deg, rgba(0, 0, 0, 0.5) 42%, rgba(0, 0, 0, 0) 131.48%);
-    
-
-}
-.faq-body-content{
-    margin-bottom: 100px;
-}
-.faq-header-content h1{
-    font-weight: 700 !important;
-    font-size: 70px;
-    font-family: var(--ff-raleway);
-    color: var( --accent-color);
-
-}
-.faq-header-content p{
-    color: #fff;
-    font-family: var(--ff-raleway);
-    font-size: 24px;
-    font-weight: 500 !important;
-}
-.faq-body-content p{
-    font-weight: 600 !important;
-    font-family: var(--ff-raleway);
-    font-size: 24px;
-   
-}
-.accordion-button:not(.collapsed){
-    background-color: #fff !important;
-    color: #000 !important;
-}
-.accordion-button:focus{
-    box-shadow: none !important;
-}
-.accordion-button{
-    font-size: 20px;
-    font-family: var(--ff-raleway);
-    font-weight: 540 !important;
+.faq-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
+.faq-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    94.43deg,
+    rgba(0, 0, 0, 0.5) 42%,
+    rgba(0, 0, 0, 0) 131.48%
+  );
+}
+
+.faq-body-content {
+  margin-bottom: 100px;
+}
+
+.faq-header-content h1 {
+  font-weight: 700 !important;
+  font-size: 70px;
+  font-family: var(--ff-raleway);
+  color: var(--accent-color);
+}
+
+.faq-header-content p {
+  color: #fff;
+  font-family: var(--ff-raleway);
+  font-size: 24px;
+  font-weight: 500 !important;
+}
+
+.faq-body-content p {
+  font-weight: 600 !important;
+  font-family: var(--ff-raleway);
+  font-size: 24px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button {
+  font-size: 20px;
+  font-family: var(--ff-raleway);
+  font-weight: 540 !important;
+}
