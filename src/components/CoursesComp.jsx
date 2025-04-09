@@ -19,7 +19,7 @@ function CoursesComp() {
                     Our courses are carefully designed to enrich and transform
                     your educational experience.
                   </p>
-                  <Link to="">
+                  <Link to="/courses">
                     <button className="browse-courses-btn">
                       Browse Our Courses &nbsp;&nbsp;
                       <i className="bi bi-arrow-right"></i>

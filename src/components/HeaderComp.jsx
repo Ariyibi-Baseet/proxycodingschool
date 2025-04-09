@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import sliderImg1 from "../assets/images/pcs001.jpg";
+import sliderImg1 from "../assets/images/pcs009.jpg";
 import "../assets/css/HeaderComp.css";
 function HeaderComp() {
   return (

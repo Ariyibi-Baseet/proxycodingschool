@@ -71,12 +71,18 @@
   height: 259px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+  transition: 300ms ease-in;
+}
+
+.available-courses-img:hover {
+  filter: grayscale(1);
+  transform: scale(0.99);
 }
 
 .courses-label {
   width: max-content;
   background-color: #ecebe9;
-  padding: 3px 17px;
+  padding: 0 14px;
   border-radius: 4px;
   margin-top: 20px;
   margin-left: 10px;
@@ -108,5 +114,5 @@
 
 .time,
 .price {
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }

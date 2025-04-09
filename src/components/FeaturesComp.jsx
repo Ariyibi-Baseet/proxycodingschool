@@ -1,10 +1,17 @@
 import "../assets/css/FeaturesComp.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 function FeaturesComp() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <div className="features-section">
         <div className="container">
-          <h1 className="text-center">
+          <h1 className="text-center" data-aos="fade-down">
             <span className="orange-text">Why</span> Proxy Coding School?
           </h1>
           <p className="techical-skills-text text-center">
@@ -14,7 +21,7 @@ function FeaturesComp() {
           <div className="skills-card-wrapper">
             <div className="row">
               <div className="col-12 col-md-6 col-lg-4 mb-3">
-                <div className="skills-card">
+                <div className="skills-card" data-aos="fade-right">
                   <svg
                     width="50"
                     height="50"
@@ -43,7 +50,7 @@ function FeaturesComp() {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 mb-3">
-                <div className="skills-card">
+                <div className="skills-card" data-aos="fade-down">
                   <svg
                     width="53"
                     height="52"
@@ -78,7 +85,7 @@ function FeaturesComp() {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 mb-3">
-                <div className="skills-card">
+                <div className="skills-card" data-aos="fade-left">
                   <svg
                     width="53"
                     height="52"
@@ -112,7 +119,7 @@ function FeaturesComp() {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 mb-3">
-                <div className="skills-card">
+                <div className="skills-card" data-aos="fade-up-right">
                   <svg
                     width="53"
                     height="52"
@@ -146,7 +153,7 @@ function FeaturesComp() {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 mb-3">
-                <div className="skills-card">
+                <div className="skills-card" data-aos="fade-up">
                   <svg
                     width="53"
                     height="52"
@@ -180,7 +187,7 @@ function FeaturesComp() {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4 mb-3">
-                <div className="skills-card">
+                <div className="skills-card" data-aos="fade-up-left">
                   <svg
                     width="53"
                     height="52"

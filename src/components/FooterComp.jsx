@@ -39,18 +39,18 @@ function FooterComp() {
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-decoration-none" to="courses">
+                      <Link className="text-decoration-none" to="/courses">
                         Courses
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-decoration-none" to="gallery">
+                      <Link className="text-decoration-none" to="/gallery">
                         Gallery
                       </Link>
                     </li>
 
                     <li className="mb-2">
-                      <Link className="text-decoration-none" to="faq">
+                      <Link className="text-decoration-none" to="/faq">
                         FAQs
                       </Link>
                     </li>

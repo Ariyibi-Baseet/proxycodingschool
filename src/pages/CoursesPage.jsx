@@ -3,7 +3,7 @@ import FooterComp from "../components/FooterComp";
 import NavBar from "../components/NavBar";
 import { Link } from "react-router-dom";
 import headerImg from "../assets/images/pcs007.jpg";
-import courseImg01 from "../assets/images/pcs006.jpg";
+import courseList from "../store/courseList";
 
 function CoursesPage() {
   return (
@@ -18,7 +18,7 @@ function CoursesPage() {
               <p className="text-center">
                 Discover a World of Knowledge and Growth with Our Courses
               </p>
-              <Link>
+              <Link to="/apply">
                 <button className="apply-btn d-block mx-auto">Apply Now</button>
               </Link>
             </div>
@@ -33,262 +33,41 @@ function CoursesPage() {
           </p>
           <div className="available-courses-block">
             <div className="row">
-              <div className="col-12 col-md-6 col-lg-4 mb-5">
-                <div className="available-courses">
-                  <img
-                    src={courseImg01}
-                    alt=""
-                    className="available-courses-img"
-                  />
+              {courseList.map((course) => (
+                <div className="col-12 col-md-6 col-lg-4 mb-5">
+                  <Link to="/apply">
+                    <div className="available-courses">
+                      <img
+                        src={course.courseImage}
+                        alt=""
+                        className="available-courses-img"
+                      />
 
-                  <div className="courses-content-down">
-                    <div className="courses-label">
-                      <span> Desktop Publishing</span>
-                    </div>
+                      <div className="courses-content-down">
+                        <div className="courses-label">
+                          <span>{course.courseLabel}</span>
+                        </div>
 
-                    <div className="content-down">
-                      <h2> Desktop Publishing: Beginner Experience</h2>
-                      <p>
-                        This course builds upon your basic understanding of
-                        UI/UX principles, allowing you to further develop your
-                        skills and knowledge in UI/UX design.
-                      </p>
-                      <div className="duration d-flex align-items-center mt-2">
-                        <p className="time d-flex align-items-center">
-                          <i className="bi bi-clock-history"></i>
-                          &nbsp;
-                          <span>2 Months</span>
-                        </p>
-                        <p className="price ms-5">₦180,000</p>
+                        <div className="content-down">
+                          <h2>{course.courseTitle}</h2>
+                          <p>{course.courseDescription}</p>
+                          <p className="time">
+                            Duration: {course.courseDuration}
+                          </p>
+                          <div className="d-flex align-items-center mt-2">
+                            <p className="price d-flex align-items-center">
+                              {course.normalPrice}
+                            </p>
+                            <p className="price ms-5">
+                              Discounted Price: {course.discountedPrice}
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-5">
-                <div className="available-courses">
-                  <img
-                    src={courseImg01}
-                    alt=""
-                    className="available-courses-img"
-                  />
-
-                  <div className="courses-content-down">
-                    <div className="courses-label">
-                      <span> Designing</span>
-                    </div>
-
-                    <div className="content-down">
-                      <h2> UI/UX Design: Enhancing User</h2>
-                      <p>
-                        This course builds upon your basic understanding of
-                        UI/UX principles, allowing you to further develop your
-                        skills and knowledge in UI/UX design.
-                      </p>
-                      <div className="duration d-flex align-items-center mt-2">
-                        <p className="time d-flex align-items-center">
-                          <i className="bi bi-clock-history"></i>
-                          &nbsp;
-                          <span>2 Months</span>
-                        </p>
-                        <p className="price ms-5">₦180,000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-5">
-                <div className="available-courses">
-                  <img
-                    src={courseImg01}
-                    alt=""
-                    className="available-courses-img"
-                  />
-
-                  <div className="courses-content-down">
-                    <div className="courses-label">
-                      <span> Engineering</span>
-                    </div>
-
-                    <div className="content-down">
-                      <h2> Frontend Web Development</h2>
-                      <p>
-                        This course builds upon your basic understanding of
-                        UI/UX principles, allowing you to further develop your
-                        skills and knowledge in UI/UX design.
-                      </p>
-                      <div className="duration d-flex align-items-center mt-2">
-                        <p className="time d-flex align-items-center">
-                          <i className="bi bi-clock-history"></i>
-                          &nbsp;
-                          <span>2 Months</span>
-                        </p>
-                        <p className="price ms-5">₦180,000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-5">
-                <div className="available-courses">
-                  <img
-                    src={courseImg01}
-                    alt=""
-                    className="available-courses-img"
-                  />
-
-                  <div className="courses-content-down">
-                    <div className="courses-label">
-                      <span>Digital marketing</span>
-                    </div>
-
-                    <div className="content-down">
-                      <h2>Digital marketing</h2>
-                      <p>
-                        This course builds upon your basic understanding of
-                        UI/UX principles, allowing you to further develop your
-                        skills and knowledge in UI/UX design.
-                      </p>
-                      <div className="duration d-flex align-items-center mt-2">
-                        <p className="time d-flex align-items-center">
-                          <i className="bi bi-clock-history"></i>
-                          &nbsp;
-                          <span>2 Months</span>
-                        </p>
-                        <p className="price ms-5">₦180,000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-3">
-                <div className="available-courses">
-                  <img
-                    src={courseImg01}
-                    alt=""
-                    className="available-courses-img"
-                  />
-
-                  <div className="courses-content-down">
-                    <div className="courses-label">
-                      <span> Designing</span>
-                    </div>
-
-                    <div className="content-down">
-                      <h2>Graphics Design & Branding</h2>
-                      <p>
-                        This course builds upon your basic understanding of
-                        UI/UX principles, allowing you to further develop your
-                        skills and knowledge in UI/UX design.
-                      </p>
-                      <div className="duration d-flex align-items-center mt-2">
-                        <p className="time d-flex align-items-center">
-                          <i className="bi bi-clock-history"></i>
-                          &nbsp;
-                          <span>2 Months</span>
-                        </p>
-                        <p className="price ms-5">₦180,000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-3">
-                <div className="available-courses">
-                  <img
-                    src={courseImg01}
-                    alt=""
-                    className="available-courses-img"
-                  />
-
-                  <div className="courses-content-down">
-                    <div className="courses-label">
-                      <span> Full-stack Web Development</span>
-                    </div>
-
-                    <div className="content-down">
-                      <h2> Full-stack Web Development</h2>
-                      <p>
-                        This course builds upon your basic understanding of
-                        UI/UX principles, allowing you to further develop your
-                        skills and knowledge in UI/UX design.
-                      </p>
-                      <div className="duration d-flex align-items-center mt-2">
-                        <p className="time d-flex align-items-center">
-                          <i className="bi bi-clock-history"></i>
-                          &nbsp;
-                          <span>2 Months</span>
-                        </p>
-                        <p className="price ms-5">₦180,000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-3">
-                <div className="available-courses">
-                  <img
-                    src={courseImg01}
-                    alt=""
-                    className="available-courses-img"
-                  />
-
-                  <div className="courses-content-down">
-                    <div className="courses-label">
-                      <span> cyber security</span>
-                    </div>
-
-                    <div className="content-down">
-                      <h2>Cyber Security</h2>
-                      <p>
-                        This course builds upon your basic understanding of
-                        UI/UX principles, allowing you to further develop your
-                        skills and knowledge in UI/UX design.
-                      </p>
-                      <div className="duration d-flex align-items-center mt-2">
-                        <p className="time d-flex align-items-center">
-                          <i className="bi bi-clock-history"></i>
-                          &nbsp;
-                          <span>2 Months</span>
-                        </p>
-                        <p className="price ms-5">₦180,000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-3">
-                <div className="available-courses">
-                  <img
-                    src={courseImg01}
-                    alt=""
-                    className="available-courses-img"
-                  />
-
-                  <div className="courses-content-down">
-                    <div className="courses-label">
-                      <span> Data Analytics</span>
-                    </div>
-
-                    <div className="content-down">
-                      <h2> Data Analytics</h2>
-                      <p>
-                        This course builds upon your basic understanding of
-                        UI/UX principles, allowing you to further develop your
-                        skills and knowledge in UI/UX design.
-                      </p>
-                      <div className="duration d-flex align-items-center mt-2">
-                        <p className="time d-flex align-items-center">
-                          <i className="bi bi-clock-history"></i>
-                          &nbsp;
-                          <span>2 Months</span>
-                        </p>
-                        <p className="price ms-5">₦180,000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

@@ -1,7 +1,13 @@
 import "../assets/css/AboutComp.css";
 import aboutImg from "../assets/images/gallery.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function AboutComp() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <div className="about-section">
@@ -10,7 +16,7 @@ function AboutComp() {
             <div className="d-md-none col-12 col-md-6 mb-3">
               <img src={aboutImg} alt="" className="w-100 h-100" />
             </div>
-            <div className="col-12 col-md-6 mb-3">
+            <div className="col-12 col-md-6 mb-3" data-aos="fade-right">
               <span className="small-text">Our Educational Approach</span>
               <h1>Empowered Teaching,Limitless Potential</h1>
               <p>
@@ -31,6 +37,7 @@ function AboutComp() {
                 src={aboutImg}
                 alt=""
                 className="w-100 h-100 object-fit-cover"
+                data-aos="fade-left"
               />
             </div>
           </div>
