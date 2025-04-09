@@ -55,7 +55,7 @@ function CoursesPage() {
                       </p>
                       <div className="duration d-flex align-items-center mt-2">
                         <p className="time d-flex align-items-center">
-                          <i class="bi bi-clock-history"></i>
+                          <i className="bi bi-clock-history"></i>
                           &nbsp;
                           <span>2 Months</span>
                         </p>
@@ -87,7 +87,7 @@ function CoursesPage() {
                       </p>
                       <div className="duration d-flex align-items-center mt-2">
                         <p className="time d-flex align-items-center">
-                          <i class="bi bi-clock-history"></i>
+                          <i className="bi bi-clock-history"></i>
                           &nbsp;
                           <span>2 Months</span>
                         </p>
@@ -119,7 +119,7 @@ function CoursesPage() {
                       </p>
                       <div className="duration d-flex align-items-center mt-2">
                         <p className="time d-flex align-items-center">
-                          <i class="bi bi-clock-history"></i>
+                          <i className="bi bi-clock-history"></i>
                           &nbsp;
                           <span>2 Months</span>
                         </p>
@@ -151,7 +151,7 @@ function CoursesPage() {
                       </p>
                       <div className="duration d-flex align-items-center mt-2">
                         <p className="time d-flex align-items-center">
-                          <i class="bi bi-clock-history"></i>
+                          <i className="bi bi-clock-history"></i>
                           &nbsp;
                           <span>2 Months</span>
                         </p>
@@ -183,7 +183,7 @@ function CoursesPage() {
                       </p>
                       <div className="duration d-flex align-items-center mt-2">
                         <p className="time d-flex align-items-center">
-                          <i class="bi bi-clock-history"></i>
+                          <i className="bi bi-clock-history"></i>
                           &nbsp;
                           <span>2 Months</span>
                         </p>
@@ -215,7 +215,7 @@ function CoursesPage() {
                       </p>
                       <div className="duration d-flex align-items-center mt-2">
                         <p className="time d-flex align-items-center">
-                          <i class="bi bi-clock-history"></i>
+                          <i className="bi bi-clock-history"></i>
                           &nbsp;
                           <span>2 Months</span>
                         </p>
@@ -247,7 +247,7 @@ function CoursesPage() {
                       </p>
                       <div className="duration d-flex align-items-center mt-2">
                         <p className="time d-flex align-items-center">
-                          <i class="bi bi-clock-history"></i>
+                          <i className="bi bi-clock-history"></i>
                           &nbsp;
                           <span>2 Months</span>
                         </p>
@@ -279,7 +279,7 @@ function CoursesPage() {
                       </p>
                       <div className="duration d-flex align-items-center mt-2">
                         <p className="time d-flex align-items-center">
-                          <i class="bi bi-clock-history"></i>
+                          <i className="bi bi-clock-history"></i>
                           &nbsp;
                           <span>2 Months</span>
                         </p>
