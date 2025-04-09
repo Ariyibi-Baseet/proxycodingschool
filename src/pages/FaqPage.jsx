@@ -4,11 +4,6 @@ import FaqImage from "../assets/images/faq.png";
 import FooterComp from "../components/FooterComp";
 
 
-
-
-
-
-
 function FaqPage() {
   return (
     <>
@@ -25,7 +20,7 @@ function FaqPage() {
               <p className="text-center">Here are some common questions about Proxy Coding School</p>
             </div>
           </div>
-          
+
         </div>
       </section>
 
@@ -68,7 +63,7 @@ function FaqPage() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, vitae.
       </div>
     </div>
-    
+
   </div>
 </div>
 
@@ -120,5 +115,3 @@ function FaqPage() {
     </>
   );
 }
-
-export default FaqPage;

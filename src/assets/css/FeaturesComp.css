@@ -3,6 +3,12 @@
   background-color: #f5f3f3;
 }
 
+@media screen and (max-width: 600px) {
+  .features-section {
+    padding: 40px 15px;
+  }
+}
+
 h1 {
   font-family: var(--ff-raleway);
   font-size: var(--fs-48);
@@ -17,6 +23,10 @@ h1 {
   font-weight: 500 !important;
   font-family: var(--ff-raleway);
   font-size: var(--fs-20);
+}
+
+.skills-card-wrapper {
+  margin: 50px 0 40px 0;
 }
 
 .skills-card {

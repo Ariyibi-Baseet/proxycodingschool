@@ -1,7 +1,17 @@
 import "../assets/css/NavBar.css";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import { useState } from "react";
 
 function NavBar() {
+  // const path = useLocation();
+  // console.log(path.pathname);
+  const [activeLink, setActiveLink] = useState("");
+
+  const handleClick = () => {
+    setActiveLink(activeLink);
+    console.log(setActiveLink(activeLink));
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg">
@@ -24,29 +34,59 @@ function NavBar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <NavLink
+                  className={
+                    activeLink === "home" ? "nav-link active" : "nav-link"
+                  }
+                  to="/"
+                  onClick={handleClick}
+                >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/courses">
+                <NavLink
+                  className={
+                    activeLink === "courses" ? "nav-link active" : "nav-link"
+                  }
+                  to="/courses"
+                  onClick={handleClick}
+                >
                   Courses
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <NavLink
+                  className={
+                    activeLink === "about" ? "nav-link active" : "nav-link"
+                  }
+                  to="/about"
+                  onClick={handleClick}
+                >
                   About Us
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/gallery">
+                <NavLink
+                  className={
+                    activeLink === "gallery" ? "nav-link active" : "nav-link"
+                  }
+                  to="/gallery"
+                  onClick={handleClick}
+                >
                   Gallery
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/faq">
+                <NavLink
+                  className={
+                    activeLink === "faq" ? "nav-link active" : "nav-link"
+                  }
+                  to="/faq"
+                  onClick={handleClick}
+                >
                   FAQs
-                </Link>
+                </NavLink>
               </li>
             </ul>
             <div className="btn-wrapper">

@@ -19,7 +19,6 @@
   font-weight: 600 !important;
   font-size: var(--fs-16);
   width: max-content;
-  /* border: 2px solid black !important; */
 }
 
 .active {
