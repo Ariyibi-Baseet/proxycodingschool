@@ -4,8 +4,14 @@ import NavBar from "../components/NavBar";
 import { Link } from "react-router-dom";
 import headerImg from "../assets/images/pcs007.jpg";
 import courseList from "../store/courseList";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function CoursesPage() {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <>
       <NavBar />
@@ -34,9 +40,15 @@ function CoursesPage() {
           <div className="available-courses-block">
             <div className="row">
               {courseList.map((course) => (
-                <div className="col-12 col-md-6 col-lg-4 mb-5">
+                <div
+                  className="col-12 col-md-6 col-lg-4 mb-5"
+                  key={course.courseTitle}
+                >
                   <Link to="/apply">
-                    <div className="available-courses">
+                    <div
+                      className="available-courses"
+                      data-aos={course.animation}
+                    >
                       <img
                         src={course.courseImage}
                         alt=""

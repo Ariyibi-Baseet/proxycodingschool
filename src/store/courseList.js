@@ -18,6 +18,7 @@ const courseList = [
     courseDuration: `4-6 Weeks`,
     normalPrice: "₦100,000",
     discountedPrice: "₦80,000",
+    animation: "fade-right",
   },
   {
     courseImage: uiuxImg,
@@ -29,6 +30,7 @@ const courseList = [
     courseDuration: `2 Months`,
     normalPrice: "₦250,000",
     discountedPrice: "₦180,000",
+    animation: "fade-up",
   },
   {
     courseImage: frontendImg,
@@ -40,6 +42,7 @@ const courseList = [
     courseDuration: `3 Months`,
     normalPrice: "₦300,000",
     discountedPrice: "₦220,000",
+    animation: "fade-left",
   },
   {
     courseImage: digitalMarketing,
@@ -51,6 +54,7 @@ const courseList = [
     courseDuration: `3 Months`,
     normalPrice: "₦300,000",
     discountedPrice: "₦180,000",
+    animation: "fade-right",
   },
   {
     courseImage: graphicsImg,
@@ -62,6 +66,7 @@ const courseList = [
     courseDuration: `3 Months`,
     normalPrice: "₦250,000",
     discountedPrice: "₦160,000",
+    animation: "fade-up",
   },
   {
     courseImage: fullstackImg,
@@ -73,6 +78,7 @@ const courseList = [
     courseDuration: `6 Months`,
     normalPrice: "₦600,000",
     discountedPrice: "₦450,000",
+    animation: "fade-left",
   },
   {
     courseImage: cyberSecurityImg,
@@ -84,6 +90,7 @@ const courseList = [
     courseDuration: `2 Months`,
     normalPrice: "₦400,000",
     discountedPrice: "₦250,000",
+    animation: "fade-right",
   },
   {
     courseImage: dataAnalytics,
@@ -95,6 +102,7 @@ const courseList = [
     courseDuration: `3 Months`,
     normalPrice: "₦400,000",
     discountedPrice: "₦250,000",
+    animation: "fade-left",
   },
 ];
 

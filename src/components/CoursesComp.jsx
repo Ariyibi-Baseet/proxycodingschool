@@ -3,8 +3,14 @@ import "../assets/css/CoursesComp.css";
 import webIcon from "../assets/images/react.png";
 import designIcon from "../assets/images/design.png";
 import dataAnalyticIcon from "../assets/images/data.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function CoursesComp() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <section className="courses-section">
@@ -12,7 +18,7 @@ function CoursesComp() {
           <div className="row">
             <div className="col-12 col-md-12 col-lg-5 mb-3 d-flex align-items-center">
               <div className="explore-section ">
-                <div className="explore-content">
+                <div className="explore-content" data-aos="fade-right">
                   <p className="explore-text">Explore our </p>
                   <h1 className="courses-text">Current Course Offerings </h1>
                   <p>
@@ -29,7 +35,7 @@ function CoursesComp() {
               </div>
             </div>
             <div className="col-12 col-md-12 col-lg-7 mb-3">
-              <div className="courses-block">
+              <div className="courses-block" data-aos="fade-left">
                 <div className="frontend-block">
                   <div className="overlay d-flex align-items-center justify-content-center flex-column">
                     <img src={webIcon} alt="" />

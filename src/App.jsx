@@ -7,6 +7,8 @@ import FeaturesComp from "./components/FeaturesComp";
 import CoursesComp from "./components/CoursesComp";
 import TestimonialComp from "./components/TestimonialComp";
 
+import "./assets/css/index.css";
+
 function App() {
   return (
     <>
