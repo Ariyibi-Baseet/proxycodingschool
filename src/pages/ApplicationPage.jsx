@@ -42,7 +42,7 @@ function ApplicationPage() {
   return (
     <>
       <div className="container-fluid">
-      <div className='apply-body d-flex flex-column flex-lg-row min-vh-100 gap-2'>
+      <div className='apply-body d-flex flex-column flex-lg-row min-vh-100'>
       <div className="apply-body-content d-lg-flex d-none align-items-center justify-content-center ">
         <div>
           <div className='proxy-img d-flex justify-content-center'>
@@ -57,7 +57,7 @@ function ApplicationPage() {
       </div>
 
 
-      <div className='form p-4 d-flex flex-column justify-content-center'>
+      <div className='form p-lg-5 p-3 d-flex flex-column justify-content-center'>
       <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
             <Link className='' to='/'>
