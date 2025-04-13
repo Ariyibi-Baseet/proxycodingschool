@@ -1,0 +1,158 @@
+.about-header {
+  height: 700px;
+  background: linear-gradient(#00000099), url("../images/about-img.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+.about-header-content {
+  height: 700px;
+}
+
+.we-are-text {
+  font-variant: small-caps;
+}
+
+.hello-text {
+  font-variant: small-caps;
+  font-size: 40px;
+}
+
+.hello-text,
+.we-are-text,
+.coding-school-text,
+.reality-text {
+  font-family: var(--ff-raleway);
+}
+
+.we-are-text,
+.coding-school-text {
+  font-size: 64px;
+}
+
+.hello-text,
+.we-are-text,
+.coding-school-text {
+  font-weight: 600 !important;
+}
+
+.we-are-text,
+.hello-text {
+  color: #fcfcfc;
+}
+
+.hello-text .about-orange-text {
+  color: var(--accent-color);
+}
+
+.coding-school-text {
+  color: var(--accent-color);
+  font-variant: small-caps;
+}
+
+.reality-text {
+  font-weight: 500 !important;
+}
+
+.about-page-content {
+  padding: 60px 0;
+}
+
+.block-text {
+  border-radius: 15px;
+  background-color: #eff4f8;
+  padding: 27px;
+}
+
+.img_about-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.our-mission-area {
+  padding: 40px 0;
+}
+
+.our-mission {
+  height: 400px;
+  background: linear-gradient(#00000099), url("../images/our-mission.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.inner-mission-block {
+  max-width: 600px;
+}
+.inner-mission-block h1 {
+  font-family: var(--ff-raleway);
+  font-weight: 700 !important;
+  color: var(--accent-color);
+  font-size: 48px;
+}
+
+.inner-mission-block p {
+  color: #fcfcfc;
+  font-family: var(--ff-open-sans);
+  font-size: 20px;
+}
+
+.ceo-image {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.block-text-ceo {
+  border-radius: 15px;
+  background-color: #eff4f8;
+  padding: 27px;
+}
+
+.ceo-text-orange {
+  color: var(--accent-color);
+}
+
+.facilitators-area {
+  padding: 60px 0;
+}
+
+.facilitator-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.facilitator-name,
+.facilitator-stack {
+  font-family: var(--ff-open-sans);
+  font-weight: 700 !important;
+  font-size: 16px;
+}
+
+.facilitator-stack {
+  margin-top: -15px;
+}
+
+.call-to-action-area {
+  background-color: #f7f9f7;
+  height: 300px;
+}
+
+.browse-course-btn {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  font-family: var(--ff-open-sans);
+  color: #fcfcfc;
+  border-radius: 8px;
+  width: 230px;
+}
+
+.cta p {
+  font-family: var(--ff-raleway);
+  font-weight: 700 !important;
+  font-size: 20px;
+}
