@@ -61,32 +61,36 @@ font-family: var(--ff-poppins);
     font-size: 21px;
     font-weight: 500 !important;
 }
-form label{
-    font-size: 14px;
+.info-label{
+    font-size: 13px;
     font-weight: 500 !important;
     font-family: var(--ff-open-sans);
 }
-form input{
-    font-size: 13px !important;
+.info-input{
+    font-size: 12px !important;
     font-weight: 400 !important;
     background-color: rgba(232, 231, 231, 1) !important;
     font-family: var(--ff-open-sans);
 }
-form select{
+.info-select{
     font-size: 13px !important;
     font-weight: 400 !important;
     background-color: rgba(232, 231, 231, 1) !important;
 }
-input [placeholder] {
-    font-size: 14px !important;
+.info-select:focus{
+    box-shadow: none !important;
+    border: none !important;
+}
+.info-input [placeholder] {
+    font-size: 12px !important;
     font-weight: 400 !important;    
     font-family: var(--ff-open-sans);
 }
-input:focus{
+.info-input:focus{
     box-shadow: none !important;
 }
-form span{
-    font-size: 14px;
+.info-span{
+    font-size: 13px;
     font-weight: 500 !important;
     font-family: var(--ff-open-sans);
 
@@ -95,7 +99,6 @@ form span{
    
     .form{
         width: 100%;
-        padding: 5px !important;
     }
     
 }
