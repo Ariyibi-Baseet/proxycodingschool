@@ -42,7 +42,7 @@ function ApplicationPage() {
   return (
     <>
       <div className="container-fluid">
-      <div className='apply-body d-flex flex-column flex-lg-row min-vh-100'>
+      <div className='apply-body d-flex flex-column flex-lg-row min-vh-100 gap-2'>
       <div className="apply-body-content d-lg-flex d-none align-items-center justify-content-center ">
         <div>
           <div className='proxy-img d-flex justify-content-center'>
@@ -57,7 +57,7 @@ function ApplicationPage() {
       </div>
 
 
-      <div className='form p-5 d-flex flex-column justify-content-center'>
+      <div className='form p-4 d-flex flex-column justify-content-center'>
       <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
             <Link className='' to='/'>
@@ -74,10 +74,10 @@ function ApplicationPage() {
         </div>
         
 
-        <form onSubmit={handleSubmit(onSubmit)} className="row g-3" autocomplete="off">
+        <form onSubmit={handleSubmit(onSubmit)} className="row g-2" autoComplete="off">
    <div className="col-md-6">
-    <label for="firstname" className="form-label">First Name</label>
-    <input type="text" className="form-control" id="firstname shadow-none" {...register('firstname', {
+    <label htmlFor="firstname" className="form-label info-label">First Name</label>
+    <input type="text" className="form-control info-input " id="firstname" {...register('firstname', {
             required: 'Name is required',
             minLength: {
               value: 2,
@@ -88,12 +88,12 @@ function ApplicationPage() {
               message: 'Name can only contain letters and spaces'
             }
           })}/>
-    {errors.firstname && <span className='text-danger'>{errors.firstname.message}</span>}
+    {errors.firstname && <span className='text-danger info-span'>{errors.firstname.message}</span>}
     </div>
 
     <div className="col-md-6">
-    <label for="name" className="form-label">Last Name</label>
-    <input type="text" className="form-control" id="lastname" {...register('lastname', {
+    <label htmlFor="name" className="form-label info-label">Last Name</label>
+    <input type="text" className="form-control info-input " id="lastname" {...register('lastname', {
             required: 'Name is required',
             minLength: {
               value: 2,
@@ -104,24 +104,24 @@ function ApplicationPage() {
               message: 'Name can only contain letters and spaces'
             }
           })}/>
-    {errors.lastname && <span className='text-danger'>{errors.lastname.message}</span>}
+    {errors.lastname && <span className='text-danger info-span'>{errors.lastname.message}</span>}
     </div>
 
     <div className="col-12">
-    <label for="phone-no" className="form-label">Phone Number</label>
-    <input type="tel" className="form-control" id="phone-no"  {...register('tel', {
+    <label htmlFor="phone-no" className="form-label info-label">Phone Number</label>
+    <input type="tel" className="form-control info-input" id="phone-no"  {...register('tel', {
             required: 'Enter phone number',
             pattern: {
               value: /^[0-9]{10,15}$/,
               message: 'Invalid Phone number'
             }
           })}/>
-           {errors.tel && <span className='text-danger'>{errors.tel.message}</span>}
+           {errors.tel && <span className='text-danger info-span'>{errors.tel.message}</span>}
     </div>
 
     <div className="col-12">
-    <label for="email" className="form-label">Email Address</label>
-    <input type="email" className="form-control" id="email" {...register('email', {
+    <label htmlFor="email" className="form-label info-label">Email Address</label>
+    <input type="email" className="form-control info-input" id="email" {...register('email', {
       required: 'Enter email' ,
       pattern: {
         value: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
@@ -130,12 +130,12 @@ function ApplicationPage() {
       
        
     })}/>
-      {errors.email && <span className='text-danger'>{errors.email.message}</span>}
+      {errors.email && <span className='text-danger info-span'>{errors.email.message}</span>}
     </div>
   
     <div className="col-12">
-    <label for="select" className="form-label">Course Intrest</label> 
-    <select id="select" className="form-select"  {...register("course", { required: "Please select a course", 
+    <label htmlFor="select" className="form-label info-label">Course Intrest</label> 
+    <select id="select" className="form-select info-select"  {...register("course", { required: "Please select a course", 
     })}>
        
       <option value="">Select a course</option>
@@ -145,25 +145,25 @@ function ApplicationPage() {
               
     </select>
     {errors.course && (
-    <span className="text-danger">{errors.course.message}</span>
+    <span className="text-danger info-span">{errors.course.message}</span>
   )}
         </div>
     <div className="col-md-6">
-    <input type="text" className="form-control" id="month" 
+    <input type="text" className="form-control info-input" id="month" 
     placeholder='Months'{...register("month")}readOnly/>
   </div>
   <div className="col-md-6">
-    <input type="text" className="form-control" id="time" placeholder="Time"
+    <input type="text" className="form-control info-input" id="time" placeholder="Time"
           {...register("time")}
           readOnly/>
   </div>
   <div className="col-md-6">
-      <input className="form-control" type="text" id="price"  placeholder="Price"
+      <input className="form-control info-input" type="text" id="price"  placeholder="Price"
           {...register("price")}
           readOnly/>
   </div>
   <div className="col-md-6">
-      <input className="form-control" type="text" id="discountedprice"  placeholder="Discounted price"
+      <input className="form-control info-input" type="text" id="discountedprice"  placeholder="Discounted price"
           {...register("discountedprice")}
           readOnly/>
   </div>
