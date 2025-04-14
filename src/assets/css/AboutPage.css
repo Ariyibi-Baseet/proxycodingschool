@@ -125,6 +125,12 @@
   object-position: top center;
 }
 
+@media screen and (max-width: 768px) {
+  .facilitator-image {
+    height: 500px;
+  }
+}
+
 .facilitator-name,
 .facilitator-stack {
   font-family: var(--ff-open-sans);

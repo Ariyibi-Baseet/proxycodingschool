@@ -1,7 +1,8 @@
 import bintan from "../assets/images/bintsan.jpg";
 import baseet from "../assets/images/ariyibi_baseet.jpg";
 import jexcel from "../assets/images/jexcel.jpg";
-import anonymous from "../assets/images/anonymous.jpg";
+// import anonymous from "../assets/images/anonymous.jpg";
+import mankind from "../assets/images/mankind.jpg";
 
 const facilitatorList = [
   {
@@ -20,9 +21,9 @@ const facilitatorList = [
     stack: "UI/UX Designer",
   },
   {
-    name: "John Doe",
-    image: anonymous,
-    stack: "Stack here",
+    name: "Makinde Kayode .O",
+    image: mankind,
+    stack: "Data Analyst",
   },
 ];
 
