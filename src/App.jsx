@@ -6,6 +6,7 @@ import AboutComp from "./components/AboutComp";
 import FeaturesComp from "./components/FeaturesComp";
 import CoursesComp from "./components/CoursesComp";
 import TestimonialComp from "./components/TestimonialComp";
+import ScrollUpComp from "./components/ScrollUpComp";
 
 import { Helmet } from "react-helmet";
 
@@ -55,6 +56,7 @@ function App() {
           content="https://metatags.io/images/meta-tags.png"
         />
       </Helmet>
+      <ScrollUpComp />
       <NavBar />
       <HeaderComp />
       <AboutComp />
