@@ -1,9 +1,10 @@
 import ProxyImage from "../assets/images/proxyimg.png";
 import { useForm } from "react-hook-form";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/Application.css";
 import { Helmet } from "react-helmet";
+import ApplicationPopup from "../components/ApplicationPopup";
 
 const courseData = {
   "Full-stack Web Development": {
@@ -92,9 +93,11 @@ function ApplicationPage() {
     handleSubmit,
     watch,
     setValue,
+    reset, // i added this
     formState: { errors },
   } = useForm();
-
+  // i touched this...
+  const [showApplicationPopup, setShowApplicationPopup] = useState(false);
   const selectedCourse = watch("course");
 
   useEffect(() => {
@@ -109,7 +112,10 @@ function ApplicationPage() {
   }, [selectedCourse, setValue]);
 
   const onSubmit = (data) => {
-    alert("good to go");
+    // i touched this...
+    setShowApplicationPopup(true);
+    // Reset form to default when the popup is active
+    reset();
     return data;
   };
   return (
@@ -368,6 +374,11 @@ function ApplicationPage() {
           </div>
         </div>
       </div>
+      {/* I touched this... */}
+      {/* Show Application pop up on submit */}
+      {showApplicationPopup && (
+        <ApplicationPopup setShowApplicationPopup={setShowApplicationPopup} />
+      )}
     </>
   );
 }

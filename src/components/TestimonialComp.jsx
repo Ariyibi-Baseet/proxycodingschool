@@ -1,6 +1,6 @@
 import "../assets/css/TestimonialComp.css";
 import quoteImg from "../assets/images/double-quotes.png";
-import headImg from "../assets/images/head.png";
+// import headImg from "../assets/images/head.png";
 import testimonialList from "../store/testimonialList";
 
 function TestimonialComp() {
@@ -25,7 +25,11 @@ function TestimonialComp() {
                     data-aos={testimony.animation}
                   >
                     <div className="user-info-top d-flex align-items-center">
-                      <img src={headImg} alt="" className="testimony-img" />
+                      <img
+                        src={testimony.image}
+                        alt=""
+                        className="testimony-img"
+                      />
                       <div className="user-info ms-3 d-flex justify-content-center flex-column pt-3">
                         <h4 className="user-name m-0">{testimony.name}</h4>
                         <p className="user-stack">{testimony.stack}</p>

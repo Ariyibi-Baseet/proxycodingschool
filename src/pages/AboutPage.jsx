@@ -6,8 +6,14 @@ import ceoImage from "../assets/images/proxy-ceo.jpg";
 import facilitatorList from "../store/facilitatorList";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function AboutPage() {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <>
       <Helmet>
@@ -75,7 +81,7 @@ function AboutPage() {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-12 col-lg-6 mb-3">
-                <div className="block-text">
+                <div className="block-text" data-aos="fade-right">
                   <h1>About Proxy coding school</h1>
                   <p>
                     Proxy Coding School is more than just a learning platform,
@@ -95,7 +101,12 @@ function AboutPage() {
                 </div>
               </div>
               <div className="col-12 col-md-12 col-lg-6 mb-3 d-lg-flex align-items-center">
-                <img src={image} alt="" className="img_about-image" />
+                <img
+                  src={image}
+                  alt=""
+                  className="img_about-image"
+                  data-aos="fade-left"
+                />
               </div>
             </div>
           </div>
@@ -118,10 +129,15 @@ function AboutPage() {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-12 col-lg-4 mb-3 d-lg-flex align-items-center">
-                <img src={ceoImage} alt="" className="ceo-image" />
+                <img
+                  src={ceoImage}
+                  alt=""
+                  className="ceo-image"
+                  data-aos="fade-right"
+                />
               </div>
               <div className="col-12 col-md-12 col-lg-8 mb-3 d-lg-flex align-items-center">
-                <div className="block-text-ceo">
+                <div className="block-text-ceo" data-aos="fade-left">
                   <h1>
                     <span className="ceo-text-orange">CEO</span> Proxy Coding
                     School
@@ -168,8 +184,14 @@ function AboutPage() {
 
               <div className="row mt-5">
                 {facilitatorList.map((facilitator) => (
-                  <div className="col-12 col-md-4 col-lg-3 mb-3">
-                    <div className="facilitator-block">
+                  <div
+                    className="col-12 col-md-4 col-lg-3 mb-3"
+                    key={facilitator.name}
+                  >
+                    <div
+                      className="facilitator-block"
+                      data-aos={facilitator.animation}
+                    >
                       <img
                         src={facilitator.image}
                         alt=""
@@ -181,6 +203,39 @@ function AboutPage() {
                       <p className="facilitator-stack text-center">
                         {facilitator.stack}
                       </p>
+                      <div className="facilitator-social-links d-flex align-items-center justify-content-center">
+                        <a
+                          href={facilitator.xLink}
+                          className="ms-2 fs-5"
+                          title={`Follow ${facilitator.name} on X`}
+                        >
+                          <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a
+                          href={facilitator.linkedinLink}
+                          className="ms-2 fs-5"
+                          title={`Follow ${facilitator.name} on Linkedin`}
+                        >
+                          <i class="bi bi-linkedin"></i>
+                        </a>
+                        {facilitator.name === "Aisha Sanusi" ? (
+                          <a
+                            href={facilitator.dribbleLink}
+                            className="ms-2 fs-5"
+                            title={`Follow ${facilitator.name} on Dribble`}
+                          >
+                            <i class="bi bi-dribbble"></i>
+                          </a>
+                        ) : (
+                          <a
+                            href={facilitator.githubLink}
+                            className="ms-2 fs-5"
+                            title={`Check ${facilitator.name}'s Project on Github`}
+                          >
+                            <i class="bi bi-github"></i>
+                          </a>
+                        )}
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -199,7 +254,7 @@ function AboutPage() {
                   </p>
                 </div>
                 <div className="col-12 col-md-4">
-                  <Link>
+                  <Link to="/courses">
                     <button className="browse-course-btn">
                       <span> Browse Our Course</span> &nbsp;&nbsp;
                       <i className="bi bi-arrow-right"></i>

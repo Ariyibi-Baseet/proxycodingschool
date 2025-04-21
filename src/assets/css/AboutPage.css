@@ -142,6 +142,10 @@
   margin-top: -15px;
 }
 
+.facilitator-social-links a .bi {
+  color: var(--primary-color);
+}
+
 .call-to-action-area {
   background-color: #f7f9f7;
   height: 300px;

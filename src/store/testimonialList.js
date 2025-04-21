@@ -1,36 +1,45 @@
+import maleIcon from "../assets/images/maleIcon.jpg";
+import femaleIcon from "../assets/images/femaleIcon.jpg";
+
 const testimonialList = [
   {
     name: "Sarah N.",
+    image: femaleIcon,
     stack: "Frontend Dev Intern",
     testimonyText: `Joining Proxy Coding School has been a game changer for me. I came in knowing nothing about code, and now I'm building full-stack apps with confidence. The mentors are incredibly supportive.`,
     animation: "fade-right",
   },
   {
     name: "Daniel A",
+    image: maleIcon,
     stack: "Junior Software Engineer",
     testimonyText: ` Before Proxy, I was stuck watching endless tutorials with no direction. This school gave me structure, real-world projects, and most importantly — a community that holds me accountable.`,
     animation: "fade-up",
   },
   {
     name: "Linda E",
+    image: femaleIcon,
     stack: "Backend Dev Trainee",
     testimonyText: ` I never thought I could learn backend development this fast. Thanks to Proxy Coding School’s hands-on approach and career-focused curriculum, I just landed my first freelance job!`,
     animation: "fade-left",
   },
   {
     name: "Chidera K.",
+    image: maleIcon,
     stack: "UI UX Trainee",
     testimonyText: `What I love about Proxy is the blend of theory and practical. We actually deploy apps, solve real bugs, and prepare for interviews. I feel ready for the tech world`,
     animation: "fade-bottom",
   },
   {
     name: "Fisayo O.",
+    image: maleIcon,
     stack: "UI/UX-Focused Developer",
     testimonyText: `I used to doubt myself when it came to tech. Proxy Coding School flipped that script. Now I’m leading my team’s frontend development at my internship."`,
     animation: "fade-bottom",
   },
   {
-    name: "Tobi M..",
+    name: "Tobi M.",
+    image: maleIcon,
     stack: "Frontend Dev Intern",
     testimonyText: `The project-based learning is 🔥. We’re not just writing to-do apps—we’re building APIs, deploying on Netlify,Vercel, and working like real devs.`,
     animation: "fade-bottom",

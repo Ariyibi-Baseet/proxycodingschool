@@ -12,6 +12,7 @@ import ContactPage from "./pages/ContactPage.jsx";
 import FaqPage from "./pages/FaqPage.jsx";
 import GalleryPage from "./pages/GalleryPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
+import ApplicationPopup from "./components/ApplicationPopup.jsx";
 
 // CSS FILES
 import "./assets/css/variables.css";
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
   {
     path: "/*",
     element: <NotFoundPage />,
+  },
+  {
+    path: "/popup",
+    element: <ApplicationPopup />,
   },
 ]);
 
