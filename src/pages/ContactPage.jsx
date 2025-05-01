@@ -1,10 +1,52 @@
 import FooterComp from "../components/FooterComp";
 import NavBar from "../components/NavBar";
 import "../assets/css/ContactPage.css";
+import { Helmet } from "react-helmet";
 
 function ContactPage() {
   return (
     <>
+      <Helmet>
+        <title>Contact Us — Proxy Coding School </title>
+        <meta
+          name="title"
+          content="Proxy Coding School — Learn, Grow and Thrive"
+        />
+        <meta
+          name="description"
+          content="Proxy coding school is a vibrant community that fosters growth and success for both tutors and students. We provide a supportive and enriching environment where tutors are empowered to inspire and guide students towards achieving their academic goals."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://proxycodingschool.com/" />
+        <meta
+          property="og:title"
+          content="Proxy Coding School — Learn, Grow and Thrive"
+        />
+        <meta
+          property="og:description"
+          content="Proxy coding school is a vibrant community that fosters growth and success for both tutors and students. We provide a supportive and enriching environment where tutors are empowered to inspire and guide students towards achieving their academic goals."
+        />
+        <meta
+          property="og:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://proxycodingschool.com/" />
+        <meta
+          property="twitter:title"
+          content="Proxy Coding School — Learn, Grow and Thrive"
+        />
+        <meta
+          property="twitter:description"
+          content="Proxy coding school is a vibrant community that fosters growth and success for both tutors and students. We provide a supportive and enriching environment where tutors are empowered to inspire and guide students towards achieving their academic goals."
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
+      </Helmet>
       <NavBar />
       <section className="contact-section">
         <div className="container">
@@ -24,20 +66,20 @@ function ContactPage() {
                   <div className="mb-3">
                     <input
                       type="text"
-                      className="form-control form-control-lg shadow-none w-100"
+                      className="form-control form-control-lg shadow-none w-100 contact-form-name"
                       placeholder="Name *"
                     />
                   </div>
                   <div className="mb-3">
                     <input
                       type="email"
-                      className="form-control form-control-lg shadow-none w-100"
+                      className="form-control form-control-lg shadow-none w-100 contact-form-email"
                       placeholder="Email Address *"
                     />
                   </div>
-                  <div class="mb-3">
+                  <div className="mb-3">
                     <textarea
-                      className="form-control shadow-none w-100"
+                      className="form-control shadow-none w-100 contact-form-textarea"
                       id="exampleFormControlTextarea1"
                       placeholder="Message here..."
                       rows="5"
@@ -48,24 +90,27 @@ function ContactPage() {
                 <div className="contact-info mt-5 d-flex align-items-center">
                   <p className="phone">
                     <span>
-                      <i class="bi bi-telephone"></i> Phone
+                      <i className="bi bi-telephone"></i> Phone
                     </span>
-                    <a href="tel:+2348039209990" className="ms-2">
+                    <a href="tel:+2348039209990" className="ms-2 contact-link">
                       08039209990
                     </a>
                   </p>
                   <p className="mail ms-3">
                     <span>
-                      <i class="bi bi-envelope"></i> Email
+                      <i className="bi bi-envelope"></i> Email
                     </span>
-                    <a href="mailto:proxy@gmail.com" className="ms-2">
+                    <a
+                      href="mailto:proxy@gmail.com"
+                      className="ms-2 contact-link"
+                    >
                       proxy@gmail.com
                     </a>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-1"></div>
+            <div className="col-2"></div>
             <div className="col-12 col-md-12 col-lg-5 mb-5">
               <div className="location-wrapper">
                 <iframe
@@ -73,7 +118,7 @@ function ContactPage() {
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
+                  referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
             </div>

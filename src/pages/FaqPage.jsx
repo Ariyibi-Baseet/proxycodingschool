@@ -2,10 +2,53 @@ import NavBar from "../components/NavBar";
 import "../assets/css/FaqPage.css";
 import FaqImage from "../assets/images/faq.png";
 import FooterComp from "../components/FooterComp";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function FaqPage() {
   return (
     <>
+      <Helmet>
+        <title>FAQs — Proxy Coding School </title>
+        <meta
+          name="title"
+          content="Proxy Coding School — Learn, Grow and Thrive"
+        />
+        <meta
+          name="description"
+          content="Proxy coding school is a vibrant community that fosters growth and success for both tutors and students. We provide a supportive and enriching environment where tutors are empowered to inspire and guide students towards achieving their academic goals."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://proxycodingschool.com/" />
+        <meta
+          property="og:title"
+          content="Proxy Coding School — Learn, Grow and Thrive"
+        />
+        <meta
+          property="og:description"
+          content="Proxy coding school is a vibrant community that fosters growth and success for both tutors and students. We provide a supportive and enriching environment where tutors are empowered to inspire and guide students towards achieving their academic goals."
+        />
+        <meta
+          property="og:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://proxycodingschool.com/" />
+        <meta
+          property="twitter:title"
+          content="Proxy Coding School — Learn, Grow and Thrive"
+        />
+        <meta
+          property="twitter:description"
+          content="Proxy coding school is a vibrant community that fosters growth and success for both tutors and students. We provide a supportive and enriching environment where tutors are empowered to inspire and guide students towards achieving their academic goals."
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
+      </Helmet>
       <NavBar />
       <section>
         <div className="faq-header">
@@ -45,8 +88,9 @@ function FaqPage() {
                 data-bs-parent="#accordionFlushExample"
               >
                 <div className="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Iste, dolorem.
+                  Since each course has its own schedule and time commitment,
+                  you're free to enroll in more than one — as long as you're
+                  able to manage the workload effectively.
                 </div>
               </div>
             </div>
@@ -60,7 +104,7 @@ function FaqPage() {
                   aria-expanded="false"
                   aria-controls="flush-collapseTwo"
                 >
-                  Are the courses availiable online or do they require in-person
+                  Are the courses available online or do they require in-person
                   attendance?
                 </button>
               </h2>
@@ -70,8 +114,9 @@ function FaqPage() {
                 data-bs-parent="#accordionFlushExample"
               >
                 <div className="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Neque, nobis?
+                  We offer both online and in-person classes, so students can
+                  choose the learning format that best suits their schedule and
+                  location.
                 </div>
               </div>
             </div>
@@ -85,7 +130,7 @@ function FaqPage() {
                   aria-expanded="false"
                   aria-controls="flush-collapseThree"
                 >
-                  Are there any job placement or internship oppurtunities after
+                  Are there any job placement or internship opportunities after
                   completing the course?
                 </button>
               </h2>
@@ -95,8 +140,9 @@ function FaqPage() {
                 data-bs-parent="#accordionFlushExample"
               >
                 <div className="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum, vitae.
+                  Yes! We offer job placement support and internship
+                  opportunities to help our graduates kickstart their tech
+                  careers.
                 </div>
               </div>
             </div>
@@ -114,7 +160,7 @@ function FaqPage() {
                   aria-expanded="false"
                   aria-controls="flush-collapseFour"
                 >
-                  What paymeny method are accepted for registration/enrollment
+                  What payment method are accepted for registration/enrollment
                   fees?
                 </button>
               </h2>
@@ -124,8 +170,10 @@ function FaqPage() {
                 data-bs-parent="#accordionFlushExample"
               >
                 <div className="accordion-body">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic,
-                  perspiciatis!
+                  We accept all major payment methods for registration and
+                  enrollment fees, including bank transfers, debit/credit cards,
+                  mobile money, and other widely used platforms. Whatever is
+                  most convenient for you — we've got you covered.
                 </div>
               </div>
             </div>
@@ -149,8 +197,12 @@ function FaqPage() {
                 data-bs-parent="#accordionFlushExample"
               >
                 <div className="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem, possimus?
+                  For further assistance with registration or enrollment, please
+                  visit our{" "}
+                  <Link to="/contact" style={{ color: "#1e90ff" }}>
+                    Contact Page
+                  </Link>{" "}
+                  or reach out to us directly at +2348039209990
                 </div>
               </div>
             </div>
@@ -174,8 +226,9 @@ function FaqPage() {
                 data-bs-parent="#accordionFlushExample"
               >
                 <div className="accordion-body">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Fugit, eligendi?
+                  Yes, absolutely! Upon registration, you will receive a
+                  certificate as proof of your enrollment. This will serve as
+                  official documentation of your participation in our program.
                 </div>
               </div>
             </div>

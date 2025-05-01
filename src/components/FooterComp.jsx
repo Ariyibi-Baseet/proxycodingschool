@@ -88,13 +88,22 @@ function FooterComp() {
             <div className="col-12 col-md-2">
               <h4 className="join-us-text">Join us on</h4>
               <div className="social-links">
-                <a href="#" className="me-2">
+                <a
+                  href="https://web.facebook.com/ProxyCodingSchool"
+                  className="me-2"
+                >
                   <i className="bi bi-facebook"></i>
                 </a>
-                <a href="#" className="me-2">
+                <a
+                  href="https://www.instagram.com/proxycodingschool"
+                  className="me-2"
+                >
                   <i className="bi bi-instagram"></i>
                 </a>
-                <a href="#" className="me-2">
+                <a
+                  href="https://www.linkedin.com/in/proxy-coding-school-36148367/"
+                  className="me-2"
+                >
                   <i className="bi bi-linkedin"></i>
                 </a>
               </div>

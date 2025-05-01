@@ -22,7 +22,7 @@ function FeaturesComp() {
             <div className="row">
               <div className="col-12 col-md-6 col-lg-4 mb-3">
                 <div className="skills-card" data-aos="fade-right">
-                  <svg
+                  {/* <svg
                     width="50"
                     height="50"
                     viewBox="0 0 50 50"
@@ -39,7 +39,11 @@ function FeaturesComp() {
                         fill="#1E90FF"
                       />
                     </g>
-                  </svg>
+                  </svg> */}
+                  <center>
+                    <i class="bi bi-cash-coin"></i>
+                  </center>
+
                   <h4 className="text-center">Affordable & Accessible</h4>
                   <p className="text-center">
                     We believe quality coding education should be within reach.
@@ -51,7 +55,7 @@ function FeaturesComp() {
               </div>
               <div className="col-12 col-md-6 col-lg-4 mb-3">
                 <div className="skills-card" data-aos="fade-down">
-                  <svg
+                  {/* <svg
                     width="53"
                     height="52"
                     viewBox="0 0 53 52"
@@ -72,7 +76,10 @@ function FeaturesComp() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
-                  </svg>
+                  </svg> */}
+                  <center>
+                    <i class="bi bi-file-post"></i>
+                  </center>
                   <h4 className="text-center">
                     Hands-On, Project-Based Learning
                   </h4>
@@ -86,7 +93,7 @@ function FeaturesComp() {
               </div>
               <div className="col-12 col-md-6 col-lg-4 mb-3">
                 <div className="skills-card" data-aos="fade-left">
-                  <svg
+                  {/* <svg
                     width="53"
                     height="52"
                     viewBox="0 0 53 52"
@@ -107,7 +114,10 @@ function FeaturesComp() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
-                  </svg>
+                  </svg> */}
+                  <center>
+                    <i class="bi bi-globe-americas"></i>
+                  </center>
                   <h4 className="text-center">
                     Real-World Training with Industry Experts
                   </h4>
@@ -120,7 +130,7 @@ function FeaturesComp() {
               </div>
               <div className="col-12 col-md-6 col-lg-4 mb-3">
                 <div className="skills-card" data-aos="fade-up-right">
-                  <svg
+                  {/* <svg
                     width="53"
                     height="52"
                     viewBox="0 0 53 52"
@@ -141,7 +151,10 @@ function FeaturesComp() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
-                  </svg>
+                  </svg> */}
+                  <center>
+                    <i class="bi bi-card-list"></i>
+                  </center>
                   <h4 className="text-center">Industry-Ready Curriculum</h4>
                   <p className="text-center">
                     Our curriculum is designed to match industry demands,
@@ -154,7 +167,7 @@ function FeaturesComp() {
               </div>
               <div className="col-12 col-md-6 col-lg-4 mb-3">
                 <div className="skills-card" data-aos="fade-up">
-                  <svg
+                  {/* <svg
                     width="53"
                     height="52"
                     viewBox="0 0 53 52"
@@ -175,7 +188,10 @@ function FeaturesComp() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
-                  </svg>
+                  </svg> */}
+                  <center>
+                    <i class="bi bi-receipt"></i>
+                  </center>
                   <h4 className="text-center">
                     Polish Your Professional Persona
                   </h4>
@@ -188,7 +204,7 @@ function FeaturesComp() {
               </div>
               <div className="col-12 col-md-6 col-lg-4 mb-3">
                 <div className="skills-card" data-aos="fade-up-left">
-                  <svg
+                  {/* <svg
                     width="53"
                     height="52"
                     viewBox="0 0 53 52"
@@ -209,7 +225,10 @@ function FeaturesComp() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
-                  </svg>
+                  </svg> */}
+                  <center>
+                    <i class="bi bi-people"></i>
+                  </center>
                   <h4 className="text-center">
                     Mentorship & Community Support
                   </h4>

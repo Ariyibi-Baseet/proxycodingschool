@@ -24,10 +24,10 @@ function ComingSoon() {
             <a href="https://web.facebook.com/ProxyCodingSchool">
               <i className="bi bi-facebook fs-3"></i>
             </a>
-            <Link to="/coming-soon">
+            <a href="https://www.instagram.com/proxycodingschool">
               <i className="bi bi-instagram fs-3"></i>
-            </Link>
-            <a href="">
+            </a>
+            <a href="https://www.youtube.com/@Proxycodingschool">
               <i className="bi bi-youtube fs-3"></i>
             </a>
             <a href="https://www.linkedin.com/in/proxy-coding-school-36148367/">
