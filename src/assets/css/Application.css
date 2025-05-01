@@ -62,27 +62,29 @@ font-family: var(--ff-poppins);
     font-weight: 500 !important;
 }
 .info-label{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500 !important;
     font-family: var(--ff-open-sans);
 }
 .info-input{
-    font-size: 12px !important;
+    font-size: 13px !important;
     font-weight: 400 !important;
     background-color: rgba(232, 231, 231, 1) !important;
     font-family: var(--ff-open-sans);
+    height: 50px;
 }
 .info-select{
     font-size: 13px !important;
     font-weight: 400 !important;
     background-color: rgba(232, 231, 231, 1) !important;
+    height: 50px;
 }
 .info-select:focus{
     box-shadow: none !important;
     border: none !important;
 }
 .info-input [placeholder] {
-    font-size: 12px !important;
+    font-size: 14px !important;
     font-weight: 400 !important;    
     font-family: var(--ff-open-sans);
 }
@@ -95,10 +97,19 @@ font-family: var(--ff-poppins);
     font-family: var(--ff-open-sans);
 
 }
+.button{
+    height: 50px;
+}
 @media screen and (max-width:991px) {
    
     .form{
         width: 100%;
+    }
+    .info-input{
+        height: 40px;
+    }
+    .info-select{
+        height: 40px;
     }
     
 }

@@ -162,6 +162,12 @@ function ApplicationPage() {
         />
       </Helmet>
       <div className="container-fluid">
+
+      <div className='apply-body d-flex flex-column flex-lg-row min-vh-100'>
+      <div className="apply-body-content d-lg-flex d-none align-items-center justify-content-center ">
+        <div>
+          <div className='proxy-img d-flex justify-content-center'>
+          <img src={ProxyImage} alt=""/>
         <div className="apply-body d-flex flex-column flex-lg-row min-vh-100 gap-2">
           <div className="apply-body-content d-lg-flex d-none align-items-center justify-content-center ">
             <div>
@@ -177,6 +183,7 @@ function ApplicationPage() {
                 For school enquiry: 08039209990, 08039209990
               </p>
             </div>
+
           </div>
 
           <div className="form p-4 d-flex flex-column justify-content-center">
@@ -192,6 +199,23 @@ function ApplicationPage() {
               <p>Kindly fill your details to start registration process</p>
             </div>
 
+
+      <div className='form p-lg-5 p-3 d-flex flex-column justify-content-center'>
+      <nav aria-label="breadcrumb">
+            <ol className="breadcrumb">
+            <Link className='' to='/'>
+              <li className="breadcrumb-item">Home</li>
+              </Link>
+            
+              
+              
+            </ol>
+          </nav>
+        <div className='form-header'>
+        <h1>Application Form</h1>
+        <p>Kindly fill your details to start registration process</p>
+        </div>
+        
             <form
               onSubmit={handleSubmit(onSubmit)}
               className="row g-2"
@@ -250,6 +274,7 @@ function ApplicationPage() {
                   </span>
                 )}
               </div>
+
 
               <div className="col-12">
                 <label htmlFor="phone-no" className="form-label info-label">
