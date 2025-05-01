@@ -71,28 +71,36 @@ font-family: var(--ff-poppins);
     font-weight: 400 !important;
     background-color: rgba(232, 231, 231, 1) !important;
     font-family: var(--ff-open-sans);
+    height: 40px;
 }
 .info-select{
     font-size: 13px !important;
     font-weight: 400 !important;
     background-color: rgba(232, 231, 231, 1) !important;
+    height: 40px;
 }
 .info-select:focus{
     box-shadow: none !important;
     border: none !important;
 }
-.info-input [placeholder] {
+::placeholder {
     font-size: 12px !important;
     font-weight: 400 !important;    
     font-family: var(--ff-open-sans);
+    
 }
 .info-input:focus{
     box-shadow: none !important;
 }
 .info-span{
-    font-size: 13px;
+    font-size: 13;
     font-weight: 500 !important;
     font-family: var(--ff-open-sans);
+
+}
+.error-span{
+    height: 1.2rem;
+    font-size: 13;
 
 }
 @media screen and (max-width:991px) {
